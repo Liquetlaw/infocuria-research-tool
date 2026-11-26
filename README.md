@@ -42,7 +42,7 @@ The extension collects no data and sends nothing to third parties. It only loads
 ## Limitations
 
 - This extension is unofficial and is not affiliated with the Court of Justice of the European Union. It relies on the existing InfoCuria interface (`juris.curia.europa.eu`). If the Court changes these pages, the extension may stop working until it is adapted.
-- References are recognised by their ECLI, which decisions have used since about 2014.
+- References are recognised by their ECLI.
 - Please check citations before you use them.
 
 For bug reports and suggestions, open an [issue](../../issues).
