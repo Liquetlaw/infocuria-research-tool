@@ -27,7 +27,7 @@ It works on judgments, orders, Opinions of the Court and Advocates General’s O
 ## Install
 
 1. On this page, click the green **Code** button, then **Download ZIP**, and unzip the file.
-2. Open `chrome://extensions` in Chrome (version 116 or later). Edge and other Chromium browsers work the same way (`edge://extensions`).
+2. Open `chrome://extensions` in Chrome (version 116 or later). Microsoft Edge (`edge://extensions`) supports the same extension interfaces but has not been tested.
 3. Switch on **Developer mode** (top right).
 4. Click **Load unpacked** and select the `extension` folder inside the unzipped folder (the one that contains `manifest.json`).
 5. Pin the extension via the puzzle icon in the toolbar. Then open any judgment in InfoCuria and reload the page once.
