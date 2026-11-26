@@ -2,7 +2,7 @@
 
 A free Chrome extension for working with the case law of the Court of Justice and the General Court of the European Union in the Court’s [InfoCuria](https://juris.curia.europa.eu/juris/recherche.jsf?language=en) database.
 
-[Deutsch](#deutsch) · [Privacy policy](PRIVACY.md)
+[Website](https://liquetlaw.github.io/infocuria-research-tool/) · [Deutsch](#deutsch) · [Privacy policy](PRIVACY.md)
 
 > **Works only on the old InfoCuria website** ([juris.curia.europa.eu](https://juris.curia.europa.eu/juris/recherche.jsf?language=en)), not on the new InfoCuria (infocuria.curia.europa.eu). Open judgments there, e.g. via the [old search form](https://juris.curia.europa.eu/juris/recherche.jsf?language=en).
 

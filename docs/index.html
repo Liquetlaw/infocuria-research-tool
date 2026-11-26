@@ -4,64 +4,105 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="saNi-G58leZzmq2Tui55iTvGeolIjrEFG00JkgYkM-E" />
-<title>Research tool for InfoCuria – cite CJEU case law with a double-click (free Chrome extension)</title>
-<meta name="description" content="Free Chrome extension for InfoCuria, the case-law database of the Court of Justice of the European Union. Copy full citations by double-click, copy quotes with pinpoint references, preview cited paragraphs via ECLI, OSCOLA and custom citation styles.">
+<title>Research tool for InfoCuria: cite CJEU case law with a double-click</title>
+<meta name="description" content="Free Chrome extension for InfoCuria: copy CJEU citations with a double-click, quote with pinpoint references, preview cited paragraphs. OSCOLA included.">
 <link rel="canonical" href="https://liquetlaw.github.io/infocuria-research-tool/">
-<meta property="og:title" content="Research tool for InfoCuria (unofficial)">
-<meta property="og:description" content="Cite CJEU and General Court case law in InfoCuria with a double-click. Free Chrome extension.">
-<meta property="og:image" content="https://raw.githubusercontent.com/Liquetlaw/infocuria-research-tool/main/screenshots/1_copy-citation.png">
+<link rel="alternate" hreflang="en" href="https://liquetlaw.github.io/infocuria-research-tool/">
+<link rel="alternate" hreflang="de" href="https://liquetlaw.github.io/infocuria-research-tool/de.html">
+<link rel="alternate" hreflang="x-default" href="https://liquetlaw.github.io/infocuria-research-tool/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#24476b">
 <meta property="og:type" content="website">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Research tool for InfoCuria (unofficial)","applicationCategory":"BrowserApplication","operatingSystem":"Chrome, Edge","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"description":"Chrome extension for citing case law of the Court of Justice of the European Union (CJEU) in InfoCuria: citations by double-click, quotes with pinpoint citation, previews of cited paragraphs, OSCOLA and custom citation styles.","url":"https://liquetlaw.github.io/infocuria-research-tool/","downloadUrl":"https://github.com/Liquetlaw/infocuria-research-tool"}
-</script>
+<meta property="og:site_name" content="Research tool for InfoCuria">
+<meta property="og:title" content="Research tool for InfoCuria – cite CJEU case law with a double-click">
+<meta property="og:description" content="Free Chrome extension: CJEU citations by double-click, quotes with pinpoint references, previews of cited paragraphs, OSCOLA.">
+<meta property="og:url" content="https://liquetlaw.github.io/infocuria-research-tool/">
+<meta property="og:image" content="https://liquetlaw.github.io/infocuria-research-tool/img/1_copy-citation.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="800">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Research tool for InfoCuria – cite CJEU case law with a double-click">
+<meta name="twitter:description" content="Free Chrome extension: CJEU citations by double-click, quotes with pinpoint references, previews of cited paragraphs, OSCOLA.">
+<meta name="twitter:image" content="https://liquetlaw.github.io/infocuria-research-tool/img/1_copy-citation.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Research tool for InfoCuria (unofficial)", "applicationCategory": "BrowserApplication", "operatingSystem": "Google Chrome, Microsoft Edge", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Free Chrome extension for InfoCuria: copy CJEU citations with a double-click, quote with pinpoint references, preview cited paragraphs. OSCOLA included.", "url": "https://liquetlaw.github.io/infocuria-research-tool/", "downloadUrl": "https://github.com/Liquetlaw/infocuria-research-tool", "softwareVersion": "1.1.0", "license": "https://opensource.org/licenses/MIT", "screenshot": "https://liquetlaw.github.io/infocuria-research-tool/img/1_copy-citation.png", "inLanguage": ["en", "de"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the Research tool for InfoCuria free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is free and open source under the MIT licence."}}, {"@type": "Question", "name": "Does it work on the new InfoCuria website?", "acceptedAnswer": {"@type": "Answer", "text": "No. It works on the old InfoCuria case-law pages at juris.curia.europa.eu, which are still online."}}, {"@type": "Question", "name": "Which citation styles are available?", "acceptedAnswer": {"@type": "Answer", "text": "Six templates: German standard, German as the Court cites, German short, English standard, English as the Court cites, and OSCOLA. You can also build your own style element by element."}}, {"@type": "Question", "name": "Which browsers are supported?", "acceptedAnswer": {"@type": "Answer", "text": "Google Chrome from version 116 and other Chromium browsers such as Microsoft Edge."}}, {"@type": "Question", "name": "Does the extension collect data?", "acceptedAnswer": {"@type": "Answer", "text": "No. It only loads public pages of InfoCuria and stores two settings locally in your browser."}}]}</script>
 <style>
   body { margin: 0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color: #1f2328; background: #fff; }
-  header { background: #24476b; color: #fff; padding: 3rem 1.25rem 2.5rem; }
-  header div, main { max-width: 52rem; margin: 0 auto; }
-  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; }
-  header p { margin: 0; color: #c9d6e3; font-size: 1.1rem; }
+  header { background: #24476b; color: #fff; padding: 2.5rem 1.25rem 2.5rem; }
+  header div, main, nav div { max-width: 52rem; margin: 0 auto; }
+  nav { background: #1c3956; font-size: .9rem; padding: .4rem 1.25rem; }
+  nav a { color: #c9d6e3; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .6rem; }
+  header p { margin: 0; color: #dde6ef; font-size: 1.1rem; }
   .knopf { display: inline-block; margin-top: 1.5rem; background: #fff; color: #24476b; padding: .6rem 1.1rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
   main { padding: 2rem 1.25rem 4rem; }
-  h2 { font-size: 1.3rem; margin: 2.5rem 0 .5rem; }
-  img { width: 100%; height: auto; border: 1px solid #d0d7de; border-radius: 6px; margin: .75rem 0 1.5rem; }
+  h2 { font-size: 1.35rem; margin: 2.5rem 0 .5rem; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+  figure { margin: .75rem 0 1.5rem; }
+  img { width: 100%; height: auto; border: 1px solid #d0d7de; border-radius: 6px; }
+  figcaption { font-size: .9rem; color: #59636e; margin-top: .3rem; }
   code { background: #f6f8fa; padding: .1rem .3rem; border-radius: 4px; font-size: .9em; }
   .hinweis { background: #f6f8fa; border-left: 3px solid #24476b; padding: .75rem 1rem; }
+  ol li { margin-bottom: .3rem; }
   footer { color: #59636e; font-size: .9rem; border-top: 1px solid #d0d7de; padding-top: 1rem; margin-top: 3rem; }
 </style>
 </head>
 <body>
+<nav><div><a href="de.html" hreflang="de" lang="de">Deutsche Version</a></div></nav>
 <header><div>
-  <h1>Research tool for InfoCuria</h1>
-  <p>A free Chrome extension for citing case law of the Court of Justice of the European Union (CJEU) and the General Court in InfoCuria. Unofficial.</p>
+  <h1>Research tool for InfoCuria: cite CJEU case law with a double-click</h1>
+  <p>A free Chrome extension for reading and citing judgments, orders and Opinions of the Court of Justice of the European Union and the General Court in InfoCuria. Unofficial.</p>
   <a class="knopf" href="https://github.com/Liquetlaw/infocuria-research-tool">Download on GitHub</a>
 </div></header>
 <main>
-  <p class="hinweis">Works on the <strong>old InfoCuria website</strong> (<a href="https://juris.curia.europa.eu/juris/recherche.jsf?language=en">juris.curia.europa.eu</a>), not on the new InfoCuria.</p>
+  <p class="hinweis">Works on the <strong>old InfoCuria website</strong> at <a href="https://juris.curia.europa.eu/juris/recherche.jsf?language=en">juris.curia.europa.eu</a>, not on the new InfoCuria.</p>
 
-  <h2>Copy a citation with a double-click</h2>
-  <p>Double-click a paragraph number and the complete citation is on your clipboard, for example <code>CJEU, judgment of 16 July 2020, Facebook Ireland and Schrems, C-311/18, ECLI:EU:C:2020:559, para. 94</code>.</p>
-  <img src="https://raw.githubusercontent.com/Liquetlaw/infocuria-research-tool/main/screenshots/1_copy-citation.png" alt="Copying a CJEU citation by double-clicking a paragraph number in InfoCuria" loading="lazy">
+  <p>Anyone who writes about EU law spends a lot of time copying case names, dates, case numbers and ECLIs out of InfoCuria. This extension does that part for you. It reads everything from InfoCuria itself, so nothing in a citation is guessed: if an element cannot be read reliably, it is left out and you are told.</p>
+
+  <h2>Copy a full citation with a double-click</h2>
+  <p>Double-click a paragraph number in a judgment and the complete citation is on your clipboard, for example <code>CJEU, judgment of 16 July 2020, Facebook Ireland and Schrems, C-311/18, ECLI:EU:C:2020:559, para. 94</code>. It works for judgments, orders, Opinions of Advocates General and Opinions of the Court.</p>
+  <figure><img src="img/1_copy-citation.png" width="1280" height="800" alt="Copying a CJEU citation by double-clicking a paragraph number in InfoCuria" loading="lazy"><figcaption>Double-click on paragraph 94 of the Schrems II judgment (C-311/18).</figcaption></figure>
 
   <h2>Copy a quote together with its pinpoint citation</h2>
-  <img src="https://raw.githubusercontent.com/Liquetlaw/infocuria-research-tool/main/screenshots/2_copy-quote.png" alt="Copying a quote from a judgment with its citation" loading="lazy">
+  <p>Select a passage and click “Copy with citation”. You get the quote in quotation marks followed by the citation with the right paragraph number, or the range of paragraphs if your selection spans several.</p>
+  <figure><img src="img/2_copy-quote.png" width="1280" height="800" alt="Copying a quote from a CJEU judgment with its pinpoint citation" loading="lazy"><figcaption>Quote and citation in one step.</figcaption></figure>
 
   <h2>Read cited paragraphs without leaving the page</h2>
-  <p>Every ECLI in the text becomes clickable. A pop-up shows the cited paragraph, in the language of the judgment you are reading, otherwise in English, otherwise in the language of the case.</p>
-  <img src="https://raw.githubusercontent.com/Liquetlaw/infocuria-research-tool/main/screenshots/3_preview.png" alt="Preview of a paragraph of a cited CJEU judgment" loading="lazy">
+  <p>Every ECLI in the text becomes a link. Click it and a pop-up shows the cited paragraph from the other decision: in the language of the judgment you are reading, otherwise in English, otherwise in the language of the case.</p>
+  <figure><img src="img/3_preview.png" width="1280" height="800" alt="Pop-up showing paragraph 73 of the Schrems judgment (C-362/14) cited in Schrems II" loading="lazy"><figcaption>Paragraph 73 of Schrems (C-362/14), opened from Schrems II.</figcaption></figure>
 
-  <h2>Your citation style: OSCOLA, English, German or your own</h2>
-  <img src="https://raw.githubusercontent.com/Liquetlaw/infocuria-research-tool/main/screenshots/4_citation-style.png" alt="Citation style editor with OSCOLA and custom elements" loading="lazy">
+  <h2>OSCOLA, English, German or your own citation style</h2>
+  <p>Choose one of six templates, including OSCOLA and the style the Court itself uses, or build your own: switch each element on or off, change its order, its form (for example “para. 94”, “[94]” or “Rn. 94”) and the separator.</p>
+  <figure><img src="img/4_citation-style.png" width="1280" height="800" alt="Citation style editor of the Research tool for InfoCuria" loading="lazy"><figcaption>Each element of the citation can be adjusted.</figcaption></figure>
 
-  <h2>Related documents and outline in the side panel</h2>
-  <img src="https://raw.githubusercontent.com/Liquetlaw/infocuria-research-tool/main/screenshots/5_case-and-outline.png" alt="Side panel with Advocate General's Opinion, citing decisions and outline of the judgment" loading="lazy">
+  <h2>Find your way around the case</h2>
+  <p>The side panel lists the related documents of the case, such as the Advocate General’s Opinion, the appeal or the lower instance. It links to a search for decisions that cite the judgment and shows a clickable outline of the judgment.</p>
+  <figure><img src="img/5_case-and-outline.png" width="1280" height="800" alt="Side panel with related documents, citing decisions and outline of the judgment" loading="lazy"><figcaption>Side panel next to the judgment.</figcaption></figure>
 
-  <h2>Install</h2>
-  <p>Download the code from <a href="https://github.com/Liquetlaw/infocuria-research-tool">GitHub</a> (Code → Download ZIP), unzip it, open <code>chrome://extensions</code>, switch on Developer mode and load the <code>extension</code> folder with “Load unpacked”. Works in Chrome and Edge.</p>
+  <h2>How to install</h2>
+  <ol>
+    <li>On <a href="https://github.com/Liquetlaw/infocuria-research-tool">GitHub</a>, click <strong>Code → Download ZIP</strong> and unzip the file.</li>
+    <li>Open <code>chrome://extensions</code> in Chrome (version 116 or later) or <code>edge://extensions</code> in Edge.</li>
+    <li>Switch on <strong>Developer mode</strong>.</li>
+    <li>Click <strong>Load unpacked</strong> and select the <code>extension</code> folder.</li>
+    <li>Open a judgment on <a href="https://juris.curia.europa.eu/juris/recherche.jsf?language=en">juris.curia.europa.eu</a> and reload the page once.</li>
+  </ol>
 
-  <h2 lang="de">Deutsch: Zitierhilfe für EuGH-Urteile in InfoCuria</h2>
-  <p lang="de">Kostenlose Chrome-Erweiterung für die Rechtsprechung von EuGH und EuG: Fundstelle per Doppelklick auf die Randnummer, Zitat mit Fundstelle kopieren, Vorschau zitierter Randnummern und eigener Zitierstil. Oberfläche auf Deutsch oder Englisch. Funktioniert auf der alten InfoCuria-Website (juris.curia.europa.eu).</p>
+  <h2>Frequently asked questions</h2>
+<h3>Is the Research tool for InfoCuria free?</h3>
+<p>Yes. It is free and open source under the MIT licence.</p>
+<h3>Does it work on the new InfoCuria website?</h3>
+<p>No. It works on the old InfoCuria case-law pages at juris.curia.europa.eu, which are still online.</p>
+<h3>Which citation styles are available?</h3>
+<p>Six templates: German standard, German as the Court cites, German short, English standard, English as the Court cites, and OSCOLA. You can also build your own style element by element.</p>
+<h3>Which browsers are supported?</h3>
+<p>Google Chrome from version 116 and other Chromium browsers such as Microsoft Edge.</p>
+<h3>Does the extension collect data?</h3>
+<p>No. It only loads public pages of InfoCuria and stores two settings locally in your browser.</p>
 
-  <footer>Unofficial. Not affiliated with the Court of Justice of the European Union. No tracking, no data collection (<a href="https://github.com/Liquetlaw/infocuria-research-tool/blob/main/PRIVACY.md">privacy policy</a>). MIT licence.</footer>
+  <footer>Unofficial. Not affiliated with the Court of Justice of the European Union. No tracking, no data collection (<a href="https://github.com/Liquetlaw/infocuria-research-tool/blob/main/PRIVACY.md">privacy policy</a>). MIT licence. <a href="https://github.com/Liquetlaw/infocuria-research-tool">Source code on GitHub</a>.</footer>
 </main>
 </body>
 </html>
