@@ -1,0 +1,38 @@
+/* Seitenbereich (Research tool for InfoCuria) – schlicht, Linien statt Kästen */
+:root { color-scheme: light; }
+body { margin: 0; padding: 14px 16px 28px; background: #f6f8fa; color: #1f2328; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+h2 { font-size: 13px; font-weight: 600; margin: 16px 0 6px; padding-top: 10px; border-top: 1px solid #d0d7de; }
+p { margin: 0 0 6px; }
+ul { list-style: none; margin: 0; padding: 0; }
+li { margin: 0 0 4px; }
+a { color: #1f2328; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; cursor: pointer; }
+.titel { font-weight: 600; font-size: 15px; }
+.leise { color: #59636e; font-size: 13px; }
+select { width: 100%; margin: 0 0 6px; font: inherit; }
+.beispiel { font-size: 13px; padding: 4px 0 8px; overflow-wrap: anywhere; }
+button.knopf { width: 100%; margin: 0 0 8px; font: inherit; padding: 6px 10px; border: 1px solid #1f2328; border-radius: 4px; background: #1f2328; color: #f6f8fa; cursor: pointer; }
+nav a { text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.e2 { padding-left: 12px; } .e3 { padding-left: 24px; } .e4 { padding-left: 36px; } .e5 { padding-left: 48px; }
+.fuss { margin-top: 20px; }
+#meldung { position: fixed; left: 12px; right: 12px; bottom: 12px; display: none; background: #1f2328; color: #f6f8fa; padding: 8px 12px; border-radius: 4px; font-size: 13px; }
+#meldung.an { display: block; }
+.kopfzeile { margin: 0 0 10px; }
+.kopfzeile select { width: auto; font-size: 13px; }
+.klein { font-size: 12px; }
+details.bau { margin: 6px 0 4px; }
+details.bau summary { cursor: pointer; font-size: 13px; }
+ol.bausteine { list-style: none; margin: 6px 0; padding: 0; }
+ol.bausteine li { padding: 6px 0; border-top: 1px solid #e1e4e8; }
+ol.bausteine li.aus label { color: #59636e; }
+.zeile { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.formen { display: flex; gap: 4px; margin-top: 4px; }
+.formen select { margin: 0; font-size: 13px; }
+.formen select:first-child:not(:last-child) { flex: 0 0 72px; }
+.pfeil { font: inherit; width: 26px; height: 24px; border: 1px solid #d0d7de; border-radius: 3px; background: #fff; cursor: pointer; }
+.pfeil[disabled] { opacity: .35; cursor: default; }
+label.feld { display: block; font-size: 13px; margin: 6px 0; }
+label.feld select { margin-top: 2px; }
+button.textknopf { font: inherit; font-size: 13px; background: none; border: 0; padding: 4px 0; text-decoration: underline; cursor: pointer; color: #1f2328; }
+.hinweis { font-size: 13px; color: #b42318; margin: 0 0 8px; }
+.hinweis[hidden] { display: none; }

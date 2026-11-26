@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Research tool for InfoCuria (unofficial)"
+  },
+  "beschreibung": {
+    "message": "Copy citations by double-click, preview cited paragraphs and set your own citation style for EU case law in InfoCuria."
+  },
+  "titel": {
+    "message": "Open research tool"
+  }
+}

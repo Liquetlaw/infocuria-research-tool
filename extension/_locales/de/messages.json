@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Research tool for InfoCuria (unofficial)"
+  },
+  "beschreibung": {
+    "message": "Fundstelle per Doppelklick, Verweise mit Vorschau und frei einstellbarer Zitierstil für die Rechtsprechung in InfoCuria."
+  },
+  "titel": {
+    "message": "Recherchetool öffnen"
+  }
+}
